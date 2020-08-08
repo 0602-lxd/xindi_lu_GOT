@@ -1,0 +1,110 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Game of Thrones</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="css/meyerReset.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="css/GOT_master.css" rel="stylesheet" type="text/css" media="screen">
+</head>
+
+<body>
+    <main>
+    <section id="thronesTitle">
+        <h2 class="hidden">Game of Thrones</h2>
+    </section>
+
+        <section id="imageContainer">
+            <div id="houseImages" style="right:0;">
+                <!-- add in all of the images to make a scrolling "banner" -->
+                <img src="images/stark.jpg" />
+                <img src="images/baratheon.jpg" />
+                <img src="images/lannister.jpg" />
+                <img src="images/tully.jpg" />
+                <img src="images/greyjoy.jpg" />
+                <img src="images/arryn.jpg" />
+                <img src="images/targeryen.jpg"/>
+                <img src="images/frey.jpg"/>
+                <img src="images/tyrell.jpg"/>
+            </div>
+        </section>
+
+        <nav id="bottomNav">
+            <ul id="navList">
+                <!-- custom data attribute, allowing to pass custom data https://developer.mozilla.org/en/docs/Web/API/HTMLElement/dataset -->
+                <li>
+                    <div class="sigilContainer stark" data-offset="0"></div>
+                </li>
+                <li>
+                    <div class="sigilContainer baratheon" data-offset="1"></div>
+                </li>
+                <li>
+                    <div class="sigilContainer lannister" data-offset="2"></div>
+                </li>
+                <li>
+                    <div class="sigilContainer tully" data-offset="3"></div>
+                </li>
+                <li>
+                    <div class="sigilContainer greyjoy" data-offset="4"></div>
+                </li>
+                <li>
+                    <div class="sigilContainer arryn" data-offset="5"></div>
+                </li>
+                <li>
+                    <div class="sigilContainer targaryen" data-offset="6"></div>
+                </li>
+                <li>
+                    <div class="sigilContainer tyrell" data-offset="7"></div>
+                </li>
+                <li>
+                    <div class="sigilContainer frey" data-offset="8"></div>
+                </li>
+            </ul>
+        </nav>
+
+        <h1 class="house-name">House Stark</h1>
+        <!-- replace this with the house name -->
+
+        <p class="house-info">House Stark of Winterfell is a Great House of Westeros, ruling over the vast region known as the North from their seat in Winterfell. It is one of the oldest lines of Westerosi nobility by far, claiming a line of descent stretching back over eight
+            thousand years. Before the Targaryen conquest, as well as during the War of the Five Kings and Daenerys Targaryen's invasion of Westeros, the leaders of House Stark ruled over the region as the Kings in the North.
+        </p>
+        <!-- replace this with house details (github gist) -->
+
+    </main>
+    <!--end mainContainer-->
+
+    <section class="lightbox">
+            <span class="close-lb">x</span>
+            <!-- custom video controls-->
+            <!-- end custom video controls-->
+            <video src="./video/House-Stark.mp4" ></video>
+            <!--<video src="./video/House-Baratheon.mp4" muted></video>
+            <video src="./video/House-Lannister.mp4" muted></video>
+            <video src="./video/House-Tully.mp4" muted></video>
+            <video src="./video/House-Greyjoy.mp4" muted></video>
+            <video src="./video/House-Arryn.mp4" muted></video>
+            <video src="./video/House-Targeryen.mp4" muted></video>
+            <video src="./video/House-Trey.mp4" muted></video>
+            <video src="./video/House-Tyrell.mp4" muted></video>-->
+             <!-- custom video controls-->
+			 <div id="timeBarContainer">
+					<input type="range" id="timeBar" min="0" max="100" step="1" value="0">
+			 </div>
+             <section class="vid-controls">
+                <i class="fas fa-play-circle" id="playPause"></i>
+                <i class="fas fa-backward" id="back"></i>
+                <i class="fas fa-forward" id="go"></i>
+                <i class="fas fa-volume-mute" id="mute"></i>
+                <input type="range" id="volumeControl" min="0" max="1" step="0.1" value="0.5">
+                <i class="fas fa-expand" id="expandScreen"></i>
+                <!--     <button type="button" id="pauseButton">Pause</button>
+                 <button type="button" id="muteButton">Unmute</button>-->
+            </section>
+	</section>
+        <!-- end custom video controls-->
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
