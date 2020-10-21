@@ -3,6 +3,7 @@
 ## Description
 This is my 1055-01-20S GOT House assignment.Add the final house sigils and video to my app; update the JS...
 
+js files.
 
 ## Installation
 Just clone the repo anywhere on your computer and create two new branch!
